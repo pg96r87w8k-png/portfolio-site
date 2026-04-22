@@ -1,0 +1,130 @@
+body {margin: 0;}
+
+
+h1{
+	font-family: Advent Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-weight: 600;
+	font-size: 100px;
+	color: #FBFBFB;
+	text-align: center;
+	margin-top:3%;
+	margin-left: 3%;
+		text-indent: 0px;
+	line-height: normal;sou
+	letter-spacing: 3px;
+	word-spacing: normal;
+	padding-top: 0%;
+	margin-bottom: 0;
+}
+header {
+	overflow: hidden;
+	text-align: center;
+	padding-right: 0%;
+	padding-bottom: 20%;
+	padding-left: 0%;
+	margin-top: auto;
+	background-image: url(images/header-masses.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+nav {
+    margin-top: -1%;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	text-align: center;
+	font-size: 16px;
+	line-height: normal;
+	text-indent: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 0.75em;
+
+}
+
+ul { -webkit-padding-start: 0; }
+
+ul li  {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+nav ul.sub-nav {
+	position: absolute;
+	display: none;
+	top: 100%; 
+	left: 0;
+	margin: 0;
+	text-align: left;
+}
+
+nav li:hover ul.sub-nav {
+	display: block;
+	
+}
+
+nav ul.subnav li.subnav { display: block;}
+
+
+
+footer  {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 200;
+	font-size: small;
+	text-align: center;
+	top: auto;
+	margin-top: 25%;
+	padding-bottom: 0px;
+	color: #000000;
+}
+img {
+	height: 101%;
+	width: 101%;
+	background-position: 0% 0%;
+}
+
+a.nav {-webkit-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;}
+
+a.nav:hover {	text-decoration: underline;
+	color: #D5CFD0;}
+
+
+@media screen and (max-width: 1400px) { nav {} h1.lh {} }
+
+@media screen and (max-width: 915px) {header {background-size: contain;} nav {} h1.lh {} }
+
+@media screen and (max-width: 700px) { h1 {font-size: 75px; margin-top: 2%;} nav {margin-top:-4%;} }
+
+@media screen and (max-width: 480px) {h1 {font-size:75px;} nav { margin-left:-2%; font-size: 14px;}}
+
+@media screen and (max-width: 400px) {h1 {font-size: 45px; margin-top: 3%;margin-left: -1%;} nav {font-size: 12px; }}
+
+
+	li.sub-nav a {
+		background-color: #e5e2e2;
+	z-index: 1;}
+
+	
+	li.subnav a.nav:hover {color: #7f7c7c}
+
+}
+	
+

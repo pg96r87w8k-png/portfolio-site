@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Advent Pro';
+    src: url('https://www.laurenhousego.co.uk/fonts/AdventPro/Bold/fonts/AdventPro-Bold.eot');
+    src: url('https://www.laurenhousego.co.uk/fonts/AdventPro/Bold/fonts/AdventPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://www.laurenhousego.co.uk/fonts/AdventPro/Bold/fonts/AdventPro-Bold.woff2') format('woff2'),
+         url('https://laurenhousego.co.uk/fonts/AdventPro/Bold/fonts/AdventPro-Bold.woff') format('woff'),
+         url('https://laurenhousego.co.uk/fonts/AdventPro/Bold/fonts/AdventPro-Bold.ttf')  format('truetype'),
+         url('https://laurenhousego.co.uk/fonts/AdventPro/Bold/fonts/AdventPro-Bold.svg#adventprobold') format('svg');
+         font-weight: bold;
+         font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Advent Pro';
+        src: url('https://laurenhousego.co.uk/fonts/AdventPro/Bold/fonts/AdventPro-Bold.svg#adventprobold') format('svg');
+    }
+}

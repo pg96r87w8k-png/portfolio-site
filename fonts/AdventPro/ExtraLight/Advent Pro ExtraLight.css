@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Advent Pro ExtraLight';
+    src: url('fonts/AdventPro-ExtraLight.eot');
+    src: url('fonts/AdventPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AdventPro-ExtraLight.woff2') format('woff2'),
+         url('fonts/AdventPro-ExtraLight.woff') format('woff'),
+         url('fonts/AdventPro-ExtraLight.ttf')  format('truetype'),
+         url('fonts/AdventPro-ExtraLight.svg#Advent Pro ExtraLight') format('svg');
+}

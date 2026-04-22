@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('https://laurenhousego.co.uk/fonts/SourceSansPro/Bold/fonts/SourceSansPro-Bold.eot');
+    src: url('https://laurenhousego.co.uk/fonts/SourceSansPro/Bold/fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://laurenhousego.co.uk/fonts/SourceSansPro/Bold/fonts/SourceSansPro-Bold.woff2') format('woff2'),
+         url('https://laurenhousego.co.uk/fonts/SourceSansPro/Bold/fonts/SourceSansPro-Bold.woff') format('woff'),
+         url('https://laurenhousego.co.uk/fonts/SourceSansPro/Bold/fonts/SourceSansPro-Bold.ttf')  format('truetype'),
+         url('https://laurenhousego.co.uk/fonts/SourceSansPro/Bold/fonts/SourceSansPro-Bold.svg#Source Sans Pro') format('svg');
+}

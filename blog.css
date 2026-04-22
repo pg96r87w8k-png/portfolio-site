@@ -1,0 +1,244 @@
+div.fixed { position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */ z-index: 1; text-align: center; margin: 0;}
+
+h1#black {background: #333;}
+nav#black {background: #333;}
+ul#black {margin: 0; background: #333; z-index: 2; border-radius: 0 0 3px 3px; border-left-style: solid; border-left-color: #333; border-left-width: 5px; border-right-style: solid; border-right-color: #333; border-right-width: 5px;}
+
+	header {float:left;}
+
+div.fixed {position: fixed; display: flex; flex-direction: column; width: 250px;}
+
+h1.lh {
+	order: 1;
+	font-family: Advent Pro;
+	font-style: normal;
+	font-weight: bold;
+	color: #6F6F6F;
+	text-align: left;
+	font-size: 60px;
+	bottom: 0%;
+	margin-bottom: 2%;
+	padding-left: 5%;
+	background-color: #FFFFFF;
+}
+	
+
+
+h2 {font-family: Advent Pro;}
+h3 {font-family: Advent Pro;}
+p {font-family: Source Sans Pro;}
+
+div.sidenav { 
+	-webkit-padding-start: 0; 
+	order:2;
+	height: 100%; 
+	width: 250px;  
+	z-index: 0; 
+	top: 0; 
+	left: 0;
+	overflow-x: hidden; 
+	padding-top: 20px;
+	margin-right: 4%;
+	background-color: #ffffff;
+
+}
+
+
+a.sidenav, .dropdown-btn {
+font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 300;
+	text-align: left;
+	font-size: 16px;
+	line-height: normal;
+	text-indent: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 0.75em;
+	color: #6F6F6F;
+	background-color: #FFFFFF;
+	display:block;
+	width:100%;
+	top: 0;
+	padding: 6px 8px 6px 16px;
+	cursor: pointer;
+	outline: none;
+	border:none;
+	-webkit-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+}
+
+div.sidenav a:hover, .dropdown-btn:hover {	
+	text-decoration: underline;
+	color: #D5CFD0;}
+
+.main {margin-left: 200px; padding: 0px 10px;}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+div.dropdown-container {
+	display: none;
+	padding-left: 8px;
+	background-color: #FFFFFF;
+}
+
+
+.fa-caret-down { float:right; padding-right: 8px;}
+
+
+
+hr {
+	width: 90%;
+	opacity: 0.2;
+}
+body {
+	background-color: #FFFFFF;
+}
+
+
+
+a#white {color:#FBFBFB;}
+a#white:hover {color:#6F6F6F; }
+
+a {
+	color: #6F6F6F;
+	text-decoration: none;
+}
+
+div#social {
+	width: 50px;
+	list-style: none;
+	margin-left: 5%;
+	padding: 0;
+	overflow: hidden;
+}
+
+.socialicons ul {list-style: none; margin-left: 0; display: flex; padding: 0;}
+
+.socialicons {position: relative;}
+
+.social-icon-link {display: block; margin-left: 20%; height: calc(5px + 10px);}
+
+.social-icon {width: auto; height: 20px; overflow: visible; position: relative;}
+
+div.post-text {width: 150px; font-family: Advent Pro; font-size: 10px;}
+
+
+
+footer {
+	color: #010000;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 200;
+	font-size: small;
+	text-align: center;
+	margin-top: 80%;
+}
+
+@media screen and (max-width: 1400px) {div.sidenav {width: 200px;}  h1.lh {font-size: 45px; transition: all 1s; width: 200px;} }
+
+@media screen and (max-width: 1024px) {div.sidenav {width: 150px;} a.sidenav, .dropdown-btn  {font-size: 14px;} h1.lh {font-size: 35px; width: 150px;} div.detail {width:15%;}} 
+
+@media screen and (max-width: 768px) {div.sidenav {width: 120px;} a.sidenav, .dropdown-btn  {font-size: 12px;} h1.lh {font-size: 25px; width: 100px;} div.post-text {width: 90px; font-size: 10px; margin-left: 12%;} }
+
+@media screen and (max-width: 480px) {
+	
+
+	
+	div.detail {text-align: center; width:100%; margin-bottom: 2%; border-bottom-style: solid; border-bottom-color: rgba(51,51,51,0.1); border-bottom-width: 1px;}
+	
+	p.nobody {width: 100%; margin-left: 2%; border:none; clear:both;}
+	
+	
+
+}
+
+@media screen and (max-width: 490px) {
+	
+	div.fixed {width: 100%;}
+	
+	div.sidenav {width:100%; display: flex; justify-content: center;}
+	
+	div.center {display: flex; justify-content: center; background-color: #ffffff;}
+	
+	a.sidenav, .dropdown-btn  {font-size: 12px;}
+	
+	h1.lh {margin-top: 0;
+	padding-left: 0; text-align: center;}
+
+	
+	.wrappernav {
+ 
+ 	padding-bottom: 15%;
+ 	position: relative;
+		
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.wrappernav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.wrappernav a {
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.wrappernav a.icon {
+	position: absolute;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.wrappernav a:hover {
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+	
+	i.fa {display:block;}
+	
+	#social {display: none;}
+	div.post-text {display: none;}
+	
+	
+}
+
+img.caption {display: block; }
+
+
+
+div.img:hover .overlay {display:block; opacity: 0.5; filter: alpha(opacity=40);
+        }
+
+
+div.overlay {transition: opacity 0.3s ease-out; background: #EDEDED; position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0; filter: alpa (opacity=0); pointer-events:none;}
+
+	
+	div.imgbox {position: relative;}
+	.imgbox div.hover {position: absolute; left:0; top: 0; display: none;}
+	.imgbox:hover .hover {display: block;}
+
+img.nobody {;width: 100%;}
+a.nobody {z-index: 2;}
+
+
+section.nobodydesc {text-align: center;}
+
+ul#camus {background: #333;}
+img#outsider:hover {filter: brightness(95%);}
+div.cam1:hover {filter: brightness(95%);}

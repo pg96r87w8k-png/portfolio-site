@@ -1,0 +1,226 @@
+div.fixed { position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */ z-index: 1; text-align: center; margin: 0;}
+
+h1#black {background: #333;}
+nav#black {background: #333;}
+ul#black {margin: 0; background: #333; z-index: 2; border-radius: 0 0 3px 3px; border-left-style: solid; border-left-color: #333; border-left-width: 5px; border-right-style: solid; border-right-color: #333; border-right-width: 5px;}
+
+h1.lh {
+	font-family: Advent Pro;
+	font-style: normal;
+	font-weight: bold;
+	color: #6F6F6F;
+	font-size: 80px;
+	text-align: center;
+	bottom: 0%;
+	padding-bottom: 0px;
+	margin: 0;
+	background-color: #FFFFFF;
+}
+
+h2 {font-family: Advent Pro; 
+    font-style: normal;
+	font-weight: bold;}
+	
+h3 {font-family: Advent Pro; 
+    font-style: normal;
+	font-weight: bold;}
+
+p {font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;}
+
+p.nobody {width: 50%; margin-left: 25%; text-align: left; font-size: 18px; border-left-style: solid; border-left-color: rgba(51,51,51,0.1); border-left-width: 1px; padding-left: 2%;}
+div.detail {float: left; margin-top:0; margin-left: 5%; font-family: Advent Pro Light; font-style: normal; font-weight: lighter; text-align:left;}
+
+
+nav {
+font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	font-size: 16px;
+	line-height: normal;
+	text-indent: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 0.75em;
+	background-color: #FFFFFF;
+}
+
+
+ul { -webkit-padding-start: 0; margin-left: -5%; margin-top: 0; margin-bottom: 0; }
+
+ul li  {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+nav ul.sub-nav {
+	position: absolute;
+	display: none;
+	top: 100%; 
+	left: 0;
+	margin: 0;
+	text-align: left;
+	background-color: #FFFFFF;
+	border-radius: 0 0 3px 3px;
+	border-left-style: solid; border-left-color: #FFF; border-left-width: 5px; border-right-style: solid; border-right-color: #FFF; border-right-width: 5px;
+}
+
+
+
+nav li:hover ul.sub-nav {
+	display: block;
+	
+}
+
+nav ul.subnav li.subnav { display: block;}
+
+
+
+
+
+
+hr {
+	width: 90%;
+	opacity: 0.2;
+}
+body {
+	background-color: #FFFFFF;
+}
+
+
+
+a#white {color:#FBFBFB;}
+a#white:hover {color:#6F6F6F; }
+
+a {
+	color: #6F6F6F;
+	text-decoration: none;
+}
+
+
+a.nav {-webkit-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;}
+
+a.nav:hover {	text-decoration: underline;
+	color: #D5CFD0;}
+
+
+
+footer {
+	color: #010000;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 200;
+	font-size: small;
+	text-align: center;
+	margin-top: 20%;
+}
+
+@media screen and (max-width: 1400px) { nav {font-size: 14px;} h1.lh {font-size: 75px;} }
+
+@media screen and (max-width: 915px) { nav {font-size: 12px;} h1.lh {font-size: 50px;} div.detail {width:15%;}} 
+
+@media screen and (max-width: 700px) { nav {font-size: 10px;} h1.lh {font-size: 25px;} }
+
+@media screen and (max-width: 480px) {
+	
+	ul li  {
+	display: block;
+}
+	ul {display: inline-block;}
+	
+	ul li.subnav {text-align: left;}
+	
+	div.detail {text-align: center; width:100%; margin-bottom: 2%; border-bottom-style: solid; border-bottom-color: rgba(51,51,51,0.1); border-bottom-width: 1px;}
+	
+	p.nobody {width: 100%; margin-left: 2%; border:none; clear:both;}
+	
+	nav {
+	margin-top: 0;
+	margin-right: 0%;
+	margin-bottom: 0px;
+	} 
+	nav li:hover ul.sub-nav {
+		background-color: #FFFFFF;
+	z-index: 1;
+		text-align: center}
+	
+	li.subnav a.nav:hover {color: #7f7c7c;}
+	
+	h1.lh {font-size: 30px;}
+	
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+	.topnav {
+  overflow: hidden;
+  padding-bottom: 15%;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+	
+	i.fa {display:inline-block;}
+	
+	
+	
+	
+}
+
+	
+	div.imgbox {position: relative;}
+	.imgbox div.hover {position: absolute; left:0; top: 0; display: none;}
+	.imgbox:hover .hover {display: block;}
+
+img.nobody {;width: 100%;}
+a.nobody {z-index: 2;}
+
+
+section.nobodydesc {text-align: center;}
+
+ul#camus {background: #333;}
+img#outsider:hover {filter: brightness(95%);}
+div.cam1:hover {filter: brightness(95%);}

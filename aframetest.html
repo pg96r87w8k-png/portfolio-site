@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" />
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+	
+
+</head>
+
+<body>
+	<a-scene cursor="rayOrigin: mouse">
+            <a-assets>
+                <img id="texture" src="https://housegolp.hotglue.me/?scaletest.head.159077029072">
+	<img id="img1" src="images/fmp.jpg">
+	<img id="img2" src="images/fmp.jpg">
+	<img id="img3" src="images/ritual.jpeg">
+	<img id="img4" src="https://housegolp.hotglue.me/?scaletest.head.159077388740">
+              <img id="unmute" src="https://housegolp.hotglue.me/?scaletest.head.159113104673" crossorigin="anonymous">
+              <img id="mute" src="https://housegolp.hotglue.me/?scaletest.head.159113105468" crossorigin="anonymous">
+	<video id="vid1" autoplay="true" loop="true" crossorigin="anonymous" src="animation/shadow1.mov"  webkit-playsinline ></video>
+	<video id="vid2" autoplay="true" loop="true" src="" crossorigin="anonymous" webkit-playsinline></video>
+	
+            </a-assets> 
+
+<a-entity id="camera" position="0 3 20" camera="userHeight: 1.6" wasd-controls look-controls animation="property:position; loop: true; dir: alternate; to: 0 3 -40; dur: 40000">
+</a-entity>
+  
+<a-image src="#img1" width="2" height="3" position="3 0 7" rotation="0 -120 0"></a-image>
+	<a-curvedimage src="#texture" width="4" height="6" theta-length="-120" position="-6 0 -3" rotation="0 -70 0"></a-curvedimage>
+	<a-image src="#img2" width="2" height="3" position="-3 04 -15" rotation="0 45 0"></a-image>
+	<a-image src="#img3" width="2" height="3" position="9 8 -10" rotation="0 -45 0"></a-image>
+	<a-image src="#img4" width="2" height="3" position="-9 9 -8" rotation="0 25 0"></a-image>
+	
+<a-video src="#vid1" width="16" height="9" position="0 -6 -2" rotation="90 90 0">
+
+    <a-image id="control-volume" class="clickable" src="#mute" rotation="180 0 180" position="7 -3.5 -.1" volume> </a-image>
+      <a-image id="control-mute" class="clickable" src="#unmute" rotation="180 0 180" position="7 -3.5 -.1" visible="false" volume> </a-image>
+         </a-video>
+
+
+
+	<a-video src="#vid2" width="16" height="9" position="15 2 -10" rotation="0 -90 0"> </a-video>
+	
+
+
+<a-sky color="#111111"></a-sky>
+        </a-scene>
+</body>
+</html>
